@@ -287,6 +287,10 @@ section {
   padding-top: 300px;
 }
 
+.header .informations #typed-strings {
+  display: none;
+}
+
 .header .informations #typed,
 .header .informations .typed-cursor {
   font-size: 92px;

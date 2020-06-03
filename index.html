@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <div id="fullpage">
+    <header class="header section">
+      <div class="container">
+        <div class="informations">
+          <div id="typed-strings">
+            <p>Hello!</p>
+            <p>Wellcome to my portfolio</p>
+            <p>Scroll down for details</p>
+          </div>
+          <span id="typed"></span>
+        </div>
+      </div>
+      <div class="clouds">
+        <img src="img/cloud1.png" style="--i: 1;" alt="img/cloud1.png" />
+        <img src="img/cloud2.png" style="--i: 2;" alt="img/cloud2.png" />
+        <img src="img/cloud3.png" style="--i: 3;" alt="img/cloud3.png" />
+        <img src="img/cloud4.png" style="--i: 4;" alt="img/cloud4.png" />
+        <img src="img/cloud5.png" style="--i: 5;" alt="img/cloud5.png" />
+      </div>
+      <div class="mouse_scroll">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div>
+          <span class="m_scroll_arrows unu"></span>
+          <span class="m_scroll_arrows doi"></span>
+          <span class="m_scroll_arrows trei"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="about section">
+      <div class="container">
+        <h1 class="title-section" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+          About me
+        </h1>
+
+        <div class="about__information">
+          <div class="about__wrapper">
+            <div class="about__name">
+              <p data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000">
+                Hi
+              </p>
+              <p data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+                I am
+              </p>
+              <p data-aos="fade-left" data-aos-offset="400" data-aos-duration="3000">
+                Danil Krivoshey
+              </p>
+            </div>
+            <div class="about__text">
+              <p data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
+                I like the development.
+              </p>
+              <p data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000">
+                I was a student at Admiral Makarov National University of Shipbuilding.
+                (Bachelor of Computer Applications, Computer science).
+              </p>
+              <p data-aos="fade-right" data-aos-offset="400" data-aos-duration="3000">
+                I work as a front-end developer at the company Fluid Web.
+              </p>
+            </div>
+
+          </div>
+          <div class="about__podpis">
+            <svg id="podpis" width="439" height="255" viewBox="0 0 439 255" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M68.0438 56.1336C68.2463 68.082 71.4085 79.591 71.4085 91.4633C71.4085 101.952 71.4085 112.441 71.4085 122.93C71.4085 134.312 71.4085 145.694 71.4085 157.076C71.4085 170.787 70.7347 183.889 69.2277 197.452C68.7615 201.649 69.1654 206.129 69.1654 210.351C69.1654 216.543 68.0438 203.549 68.0438 202.001C68.0438 192.948 69.1654 184.347 69.1654 175.27C69.1654 167.993 72.5301 161.55 72.5301 154.272C72.5301 139.317 72.6708 125.789 78.3872 112.213C84.2797 98.2179 87.3178 79.1474 96.9556 67.1002C100.735 62.3762 101.693 54.562 106.738 50.5258C108.585 49.0486 113.13 43.6685 111.162 44.9802C108.74 46.595 107.692 50.1325 105.617 52.2081C96.8664 60.9583 93.4757 72.043 87.6714 82.4907C85.013 87.2758 80.6859 94.6944 80.3812 99.8752C80.0811 104.977 78.9975 114.503 75.6456 118.693C74.0221 120.722 73.0608 123.564 72.4678 126.232C71.1477 132.173 72.6413 130.016 75.8949 134.083C77.1356 135.634 80.1079 136.115 81.752 137.76C83.9156 139.923 84.7569 142.883 86.8614 144.987C90.7245 148.851 93.8301 156.75 95.024 162.123C95.565 164.557 97.734 169.02 98.8872 171.095C100.082 173.246 100.701 179.388 102.252 180.629C103.614 181.719 105.424 185.654 106.427 187.358C108.281 190.51 112.977 191.651 116.272 191.844C124.674 192.339 129.845 193.973 137.021 186.797C142.479 181.339 146.554 172.82 146.554 164.927C146.554 163.823 146.882 155.59 147.427 156.203C148.408 157.308 148.631 164.077 148.735 165.487C149.111 170.567 149.919 175.522 149.919 180.629C149.919 193.88 152.162 206.671 152.162 219.822C152.162 224.869 152.162 229.916 152.162 234.963C152.162 237.816 154.135 252.737 151.913 254.404C151.32 254.848 151.041 245.207 151.041 244.309C151.041 238.287 150.575 232.068 151.601 226.115C153.102 217.411 153.496 208.44 154.468 199.696C155.753 188.128 157.943 177.221 161.135 166.048C163.264 158.594 176.345 144.361 176.837 161.562C176.94 165.175 176.766 172.427 178.519 175.582C180.253 178.703 178.275 184.205 181.385 186.797C184.927 189.749 194.369 178.499 196.153 176.142C200.948 169.806 202.689 163.96 205.749 157.076C207.048 154.152 205.998 147.48 205.998 147.48C205.998 147.48 205.831 159.861 205.998 166.048C206.173 172.532 211.148 188.512 220.703 181.563C229.873 174.894 233.869 169.043 236.53 158.696C237.272 155.807 238.524 146.989 238.524 149.972C238.524 157.499 234.21 173.959 245.876 176.08C258.099 178.302 268.166 159.675 272.669 150.969C280.785 135.279 283.83 117.059 286.253 99.7505C288.018 87.1396 290.116 75.6217 290.116 62.8631C290.116 56.9895 289.127 52.2987 285.63 59.4984C277.677 75.8709 275.536 91.5977 275.536 109.969C275.536 121.621 275.656 138.264 280.271 149.225C283.201 156.184 284.712 162.4 292.359 165.799C297.214 167.957 305.009 167.481 309.806 166.111C317.667 163.864 325.251 151.706 329.122 144.738C332.867 137.997 337.222 127.125 337.222 119.44C337.222 105.323 342.836 89.3547 338.905 75.2004C334.843 60.5777 331.727 43.9088 320.399 32.5805C317.181 29.3625 314.691 25.7508 311.426 22.4863C307.583 18.6433 302.227 17.537 297.344 15.2584C292.012 12.7703 285.741 12.4349 280.022 11.5198C273.55 10.4843 267.466 8.48026 260.955 7.03348C253.05 5.27683 244.387 3.71976 236.28 3.41951C229.151 3.15545 218.226 4.01139 211.356 2.04869C204.795 0.173931 197.148 1.17635 190.358 1.17635C180.879 1.17635 171.142 0.538899 161.696 1.23866C140.292 2.82412 118.923 4.01136 97.8279 8.15506C63.1714 14.9626 32.4738 42.1657 19.1929 74.7643C12.521 91.1407 10.5442 106.364 6.6063 123.428C3.49582 136.907 0.749176 148.955 0.749176 162.808C0.749176 168.26 2.71395 173.096 2.99233 178.386C3.15065 181.394 6.04569 183.59 6.35706 186.237C7.82348 198.701 19.8473 193.748 27.667 192.966C39.2126 191.812 50.8048 186.278 61.8751 182.872C69.0561 180.662 76.7162 177.974 83.9951 176.392C94.6279 174.08 105.767 174.244 116.272 171.656C126.844 169.051 136.864 164.2 147.24 160.939C165.506 155.198 183.517 150.489 202.508 147.542C224.017 144.205 244.844 138.058 266.501 135.143C283.302 132.881 299.554 127.175 316.473 125.671C332.444 124.252 348.005 119.402 363.517 115.577C377.041 112.243 390.857 110.376 404.268 106.605C415.148 103.545 424.011 98.9925 434.114 94.3296C435.094 93.8774 439.167 91.1245 437.666 89.781C433.107 85.7022 417.703 88.7799 412.243 89.2202C387.164 91.2427 362.264 91.2217 337.222 94.2673C290.241 99.9812 242.816 101.73 195.904 107.726C172.445 110.725 102.454 122.111 125.992 119.814C144.134 118.044 162.498 117.554 180.7 116.636C191.382 116.098 202.074 113.334 212.727 113.334"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" data-color="dark">
+      <div class="canvas-interactive-wrapper">
+        <canvas id="canvas-interactive"></canvas>
+      </div>
+      <div class="container">
+        <h1 class="title-section" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+          My skills
+        </h1>
+        <div class="techno-container">
+          <ul class="techno-list">
+            <li id="js" class="techno-list__item active">
+              <img class="techno-icon" src="./img/js.svg" alt="JS" />
+              <div class="techno-title">JS</div>
+            </li>
+
+            <li id="html" class="techno-list__item">
+              <img class="techno-icon" src="./img/html5.svg" alt="HTML5" />
+              <div class="techno-title">HTML5</div>
+            </li>
+
+            <li id="css" class="techno-list__item">
+              <img class="techno-icon" src="./img/css.svg" alt="CSS3" />
+              <div class="techno-title">CSS3</div>
+            </li>
+
+            <li id="sass" class="techno-list__item">
+              <img class="techno-icon" src="./img/sass.svg" alt="Sass" />
+              <div class="techno-title">Sass</div>
+            </li>
+
+            <li id="bootstrap" class="techno-list__item">
+              <img class="techno-icon" src="./img/bootstrap.svg" alt="Bootstrap" />
+              <div class="techno-title">Bootstrap 4</div>
+            </li>
+
+            <li id="vue" class="techno-list__item">
+              <img class="techno-icon" src="./img/vue.svg" alt="Vue" />
+              <div class="techno-title">Vue</div>
+            </li>
+
+            <li id="react" class="techno-list__item">
+              <img class="techno-icon" src="./img/react2.png" alt="React" />
+              <div class="techno-title">React.js</div>
+            </li>
+
+            <li id="redux" class="techno-list__item">
+              <img class="techno-icon" src="./img/redux.svg" alt="Redux" />
+              <div class="techno-title">Redux</div>
+            </li>
+
+            <li id="nodejs" class="techno-list__item">
+              <img class="techno-icon" src="./img/nodejs-icon.svg" alt="Node.js" />
+              <div class="techno-title">Node.js</div>
+            </li>
+
+
+          </ul>
+          <div class="techno-info">
+            <img src="./img/js.svg" class="background-img" />
+            <div class="techno-info--text">
+              JavaScript, often abbreviated as JS, is a programming language that conforms to the
+              ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It
+              has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+              <a href="https://en.wikipedia.org/wiki/JavaScript">More info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section">
+      <div class="container">
+        <h1 class="title-section" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+          Portfolio
+        </h1>
+        <div class="promt"></div>
+      </div>
+
+      <div class="slider">
+        <div class="swiper-container">
+          <img src="./img/mackbook.png" class="macbook" />
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/RosePlum.jpg"
+                alt="https://ld-prestashop.template-help.com/prestashop_eze_250/index.php" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Barbershop.jpg"
+                alt="https://ld-prestashop.template-help.com/prestashop_eze_253/index.php" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/Covid.jpg" alt="https://ld-prestashop.template-help.com/prestashop_eze_567/index.php" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="container">
+        <h1 class="title-section" data-aos="fade-up" data-aos-offset="300" data-aos-duration="3000">
+          Contact me
+        </h1>
+        <ul class="contact__list">
+          <span>Email: <a target="_blank" href="mailto:danil@fluidweb.io"
+              class="work-email">danil@fluidweb.io</a></span>
+          <span>Upwork: <a target="_blank" href="https://www.upwork.com/freelancers/~01ad0c2b39c11be3b9">Link</a></span>
+          <div class="social-network">
+            <a target="_blank" href="skype:live:.cid.4475f881f06da8a1?userinfo" id="skype"><img src="./img/skype.svg"
+                alt="Skype"></a>
+            <a target="_blank" href="https://t.me/danilkrivoshey" id="telegram"><img src="./img/telegram.svg"
+                alt="Telegram"></a>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="sidebar" data-color="dark">
+      <div class="logo">
+        <h2>D.<br />K.</h2>
+      </div>
+      <div class="sidebar__icon">
+        <div class="sidebar__icon--line"></div>
+        <div class="sidebar__icon--line"></div>
+      </div>
+      <div class="sidebar__menu">
+        <ul id="menu">
+          <li data-menuanchor="home" data-text="Home"><a href="#home">Home</a></li>
+          <li data-menuanchor="about" data-text="About"><a href="#about">About</a></li>
+          <li data-menuanchor="skills" data-text="Skills"><a href="#skills">Skills</a></li>
+          <li data-menuanchor="portfolio" data-text="Portfolio"><a href="#portfolio">Portfolio</a></li>
+          <li data-menuanchor="contacts" data-text="Contacts"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <script src="js/granim.min.js"></script>
+  <script src="js/vivus.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/fullpage.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/Scramle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fffffe;
+  overflow: hidden !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  display: inline;
+}
+
+.container {
+  width: 1560px;
+  margin: 0 auto;
+}
+
+section {
+  height: 100vh;
+}
+
+.title-section {
+  display: block;
+  font-size: 3rem;
+  font-family: "Roboto Medium";
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+
+.sidebar {
+  position: fixed;
+  width: 75px;
+  z-index: 999;
+  height: 100vh;
+  top: 0;
+  &.active {
+    .logo {
+      z-index: 999999;
+      h2 {
+        color: white;
+      }
+    }
+    .sidebar__icon {
+      z-index: 99999;
+
+      &--line {
+        background-color: white;
+      }
+    }
+    .sidebar__menu {
+      transform: translateX(0);
+    }
+  }
+
+  .logo {
+    position: relative;
+    text-align: center;
+    margin: 20px 0 0 0;
+    h2 {
+      font-size: 36px;
+      color: #094067;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #094067;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-100vw);
+    transition: all 1s ease-in-out;
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &:hover {
+        li {
+          a {
+            opacity: 0;
+          }
+        }
+      }
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        &:before {
+          content: attr(data-text);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 24em;
+          font-weight: 700;
+          pointer-events: none;
+          opacity: 0;
+          letter-spacing: 20px;
+          transition: 0.5s;
+          white-space: nowrap;
+        }
+        &:hover:before {
+          opacity: 0.05;
+          letter-spacing: 0px;
+        }
+        a {
+          display: inline-block;
+          position: relative;
+          padding: 6px 15px;
+          text-decoration: none;
+          text-transform: uppercase;
+          background-color: #3da9fc;
+          letter-spacing: 2px;
+          overflow: hidden;
+          color: white;
+          font-size: 36px;
+          transition: 0.5s;
+          z-index: 1;
+          &:hover {
+            transform: scale(1.4);
+            z-index: 1000;
+            background-color: #ef4565;
+            opacity: 1;
+            &:before {
+              left: calc(100% + 100px);
+              transition: 0.5s;
+              transition-delay: 0.2s;
+            }
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100px;
+            width: 80px;
+            height: 100%;
+            background-image: linear-gradient(
+              90deg,
+              transparent,
+              rgba(255, 255, 255, 0.8),
+              transparent
+            );
+            transform: skewX(35deg);
+            transition: 0s;
+          }
+        }
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    &:hover {
+      .sidebar__icon {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .sidebar__icon--line:first-child {
+        transform: translateY(13px);
+      }
+      .sidebar__icon--line:last-child {
+        transform: translateY(-13px);
+      }
+    }
+    &--line {
+      display: block;
+      background-color: #094067;
+      height: 3px;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &[data-color="light"] {
+    .logo {
+      h2 {
+        color: white;
+      }
+    }
+    .sidebar__icon {
+      &--line {
+        background-color: white;
+      }
+    }
+  }
+}
+
+@import "header";
+@import "about";
+@import "skills";
+@import "portfolio";
+@import "contact";

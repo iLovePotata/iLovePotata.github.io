@@ -1,0 +1,48 @@
+.portfolio {
+  position: relative;
+  background-color: black;
+  .title-section {
+    color: white;
+  }
+
+  .promt {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .slider {
+    position: relative;
+    padding-top: 50px;
+    height: 84%;
+
+    .swiper-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .macbook {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+        left: 50%;
+        z-index: 99;
+        transform: translateX(-50%);
+      }
+      .swiper-wrapper {
+        text-align: center;
+        .swiper-slide {
+          width: 43.9%;
+          img {
+            max-width: 768px;
+            margin: 0 auto;
+            margin-top: 31px;
+          }
+        }
+      }
+    }
+  }
+}

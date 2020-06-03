@@ -642,6 +642,8 @@ section {
 
 .skills .techno-container .techno-list__item .techno-title {
   width: 100px;
+  font-family: "Roboto";
+  font-size: 18px;
 }
 
 .skills .techno-container .techno-info {
